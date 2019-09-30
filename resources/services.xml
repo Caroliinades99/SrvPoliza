@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- This file was auto-generated from WSDL --><!-- by the Apache Axis2 version: 1.7.3  Built on : May 30, 2016 (04:08:57 BST) --><serviceGroup>
+    <service name="SrvPoliza">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="coop.equidad.servicios.suscripcion.SrvPolizaMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">coop.equidad.servicios.suscripcion.SrvPolizaSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="cancelarCertificado" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://www.example.org/SrvPoliza/">
+            <actionMapping>http://www.example.org/SrvPoliza/cancelarCertificado</actionMapping>
+            <outputActionMapping>http://www.example.org/SrvPoliza/SrvPoliza/cancelarCertificadoResponse</outputActionMapping>
+        </operation>
+        <operation name="consultarPoliza" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://www.example.org/SrvPoliza/">
+            <actionMapping>http://www.example.org/SrvPoliza/consultarPoliza</actionMapping>
+            <outputActionMapping>http://www.example.org/SrvPoliza/SrvPoliza/consultarPolizaResponse</outputActionMapping>
+        </operation>
+        <operation name="buscarPolizas" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://www.example.org/SrvPoliza/">
+            <actionMapping>http://www.example.org/SrvPoliza/buscarPolizas</actionMapping>
+            <outputActionMapping>http://www.example.org/SrvPoliza/SrvPoliza/buscarPolizasResponse</outputActionMapping>
+        </operation>
+        <operation name="emitirPoliza" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://www.example.org/SrvPoliza/">
+            <actionMapping>http://www.example.org/SrvPoliza/emitirPoliza</actionMapping>
+            <outputActionMapping>http://www.example.org/SrvPoliza/SrvPoliza/emitirPolizaResponse</outputActionMapping>
+        </operation>
+        <operation name="crearCotizacion" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://www.example.org/SrvPoliza/">
+            <actionMapping>http://www.example.org/SrvPoliza/crearCotizacion</actionMapping>
+            <outputActionMapping>http://www.example.org/SrvPoliza/SrvPoliza/crearCotizacionResponse</outputActionMapping>
+        </operation>
+        <operation name="anularCertificado" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://www.example.org/SrvPoliza/">
+            <actionMapping>http://www.example.org/SrvPoliza/anularCertificado</actionMapping>
+            <outputActionMapping>http://www.example.org/SrvPoliza/SrvPoliza/anularCertificadoResponse</outputActionMapping>
+        </operation>
+        <operation name="validarCotizacion" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://www.example.org/SrvPoliza/">
+            <actionMapping>http://www.example.org/SrvPoliza/validarCotizacion</actionMapping>
+            <outputActionMapping>http://www.example.org/SrvPoliza/SrvPoliza/validarCotizacionResponse</outputActionMapping>
+        </operation>
+        <operation name="actualizarCotizacion" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://www.example.org/SrvPoliza/">
+            <actionMapping>http://www.example.org/SrvPoliza/actualizarCotizacion</actionMapping>
+            <outputActionMapping>http://www.example.org/SrvPoliza/SrvPoliza/actualizarCotizacionResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

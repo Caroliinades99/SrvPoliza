@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="SrvPolizaPU">
+		<class>coop.equidad.web.entity.Restriccion</class>
+		<class>coop.equidad.web.entity.Cliente</class>
+		<class>coop.equidad.web.entity.Permiso</class>
+		<class>coop.equidad.web.entity.PermisoPK</class>
+		<class>coop.equidad.model.entity.OsCaratula</class>
+		<class>coop.equidad.model.entity.OsTercero</class>
+		<class>coop.equidad.model.entity.OsCobertura</class>
+		<class>coop.equidad.model.entity.OsDetalle</class>
+		<class>coop.equidad.model.entity.OsReaseguro</class>
+		<class>coop.equidad.model.entity.CaratulaPK</class>
+		<class>coop.equidad.model.entity.CoberturaPK</class>
+		<class>coop.equidad.model.entity.DetallePK</class>
+		<class>coop.equidad.model.entity.TerceroPK</class>
+		<class>coop.equidad.model.entity.ReaseguroPK</class>
+		<class>coop.equidad.model.entity.OsCaratulaPz</class>
+		<class>coop.equidad.model.entity.OsTerceroPz</class>
+		<class>coop.equidad.model.entity.OsCoberturaPz</class>
+		<class>coop.equidad.model.entity.OsDetallePz</class>
+		<class>coop.equidad.model.entity.OsReaseguroPz</class>
+		<class>coop.equidad.model.entity.SuscEquivCiudade</class>
+		<class>coop.equidad.web.entity.LogSuscripcion</class>
+		<class>coop.equidad.model.entity.OsPersona</class>
+		<class>coop.equidad.model.entity.OsPersonaVinc</class>
+		<class>coop.equidad.model.entity.S03010PK</class>
+		<class>coop.equidad.model.entity.S03010</class>
+		<class>coop.laequidad.entity.S03080</class>
+		<class>coop.laequidad.entity.S03080Pk</class>
+		<class>coop.equidad.model.entity.S03sarlaft</class>
+		<class>coop.laequidad.entity.S03104</class>
+		<class>coop.laequidad.entity.S03104Pk</class>
+		<class>coop.laequidad.entity.S03105</class>
+		<class>coop.laequidad.entity.S03105Pk</class>
+		<class>coop.laequidad.entity.LOG_SERVICIO_EMISION</class>
+		<class>coop.laequidad.entity.LOG_SERVICIO_EMISIONPK</class>
+
+
+		<class>coop.equidad.model.entity.S03205</class>
+		<class>coop.equidad.model.entity.S03205PK</class>
+
+		<!-- <class>coop.equidad.model.entity.Fasecolda1</class> -->
+
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:oracle:thin:@192.168.200.12:1521:osiris" />
+			<!--<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@192.168.200.35:1521:osiris" 
+				/> -->
+			<property name="javax.persistence.jdbc.user" value="webservices" />
+			<property name="javax.persistence.jdbc.password" value="webservi14" />
+			<property name="eclipselink.logging.level" value="info" />
+		</properties>
+	</persistence-unit>
+</persistence>

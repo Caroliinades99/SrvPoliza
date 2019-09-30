@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://www.example.org/SrvPoliza/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SrvPoliza"
+	targetNamespace="http://www.example.org/SrvPoliza/">
+	<wsdl:types>
+		<xsd:schema targetNamespace="http://www.example.org/SrvPoliza/">
+
+			<xsd:complexType name="Poliza">
+				<xsd:sequence>
+					<xsd:element name="sucur" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="codpla" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="certif" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="orden" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="estado" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="poliza" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tomador" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="asegurado" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="beneficiario" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="cliente" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="agente" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="comision" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="participacion" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tipcer" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tipdoc" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecini" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecter" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecexp" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecori" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecren" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="dias" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="hordes" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="horhas" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="moneda" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="sucrea" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="sucmod" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecrea" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecmod" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="vaseg" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="vprima" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="vbase" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="cambio" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tipcoa" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="coaseg" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="coalider" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="antcodpla" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="antcertif" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="antorden" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecout" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="cotizacion" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="codcia" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="forpag" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tipflo" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="clasifrea" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="cumulo" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="numdoc" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="diafact" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="valgastos" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="porgastos" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="planorden" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="pordescuento" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="porrecargo" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tipocarga" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="motivocan" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="pollider" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="cerlider" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="ordengrupo" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="plaza" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="amarreplan" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="amarrecertif" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="amarreorden" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="amarrepoliza" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecterplan" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tipfac" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="valiva" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="nivel" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="rol" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="cesioncomision" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="certifcausacion" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="pordescesion" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecimpuestos" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="impresa" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="ubicacion" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:sequence>
+						<xsd:element name="cobertura" type="tns:Cobertura"
+							minOccurs="1" maxOccurs="unbounded" nillable="true">
+						</xsd:element>
+					</xsd:sequence>
+					<xsd:sequence>
+						<xsd:element name="tercero" type="tns:Tercero"
+							minOccurs="1" maxOccurs="unbounded" nillable="true">
+						</xsd:element>
+					</xsd:sequence>
+					<xsd:sequence>
+						<xsd:element name="detalle" type="tns:Detalle"
+							minOccurs="1" maxOccurs="unbounded" nillable="true">
+						</xsd:element>
+
+					</xsd:sequence>
+					<xsd:sequence>
+						<xsd:element name="cuentaCorriente" type="tns:CuentaCorriente"
+							minOccurs="1" nillable="true">
+						</xsd:element>
+					</xsd:sequence>
+					<xsd:sequence>
+						<xsd:element name="polizaEmite" type="tns:Poliza"
+							minOccurs="1" maxOccurs="unbounded" nillable="true">
+						</xsd:element>
+					</xsd:sequence>
+					<xsd:sequence>
+						<xsd:element name="reaseguro" type="tns:Reaseguro"
+							minOccurs="1" maxOccurs="1" nillable="true">
+							</xsd:element>
+					</xsd:sequence>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="Tercero">
+				<xsd:sequence>
+					<xsd:element name="sucur" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="codpla" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="certif" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="orden" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="inciso" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="vinculacion" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="codVinculacion" type="xsd:int" minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="principal" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="codigo" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="participacion" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="comision" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="categoria" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="codcla" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="parentesco" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="nombre" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="sexo" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tipoPersona" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fechaNacimiento" type="xsd:date" minOccurs="0">
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="Cobertura">
+				<xsd:sequence>
+					<xsd:element name="sucur" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="codpla" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="certif" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="orden" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="inciso" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="codcla" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="estado" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="estant" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tasa" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="vaseg" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="prima" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="comisi" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="cumcat" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="deduca" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="deducm" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="deducp" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="monded" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="monval" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tipo" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="prirev" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="pricau" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="vasant" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tasant" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="priant" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="impuesto" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="codram" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecini" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecfin" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="vasegpol" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="carencia" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tasariesgo" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tasaperiodo" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tasaproteccion" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="gruporea" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="monprima" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="primapoliza" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="primareas" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="pricaureas" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="prirevreas" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="coapactado" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="pordedvalor" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tasareas" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="copago" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="moncopago" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="consumo" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="dedmax" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="indvariable" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="descuentos" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="recargos" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="numpag" type="xsd:int" minOccurs="0">
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="Detalle">
+				<xsd:sequence>
+					<xsd:element name="sucur" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="codpla" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="certif" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="orden" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="inciso" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="coddet" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="valdate" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="valnumber" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="valstring" type="xsd:string" minOccurs="0">
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="CuentaCorriente">
+				<xsd:sequence>
+					<xsd:element name="sucur" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="person" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="origen" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tipdoc" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="numdoc" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="nrocta" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecdoc" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecven" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="feccam" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="feccon" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="estado" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="codtra" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="oriant" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tipant" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="numant" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="ctaant" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="oripos" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tippos" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="numpos" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="ctapos" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="oriref" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tipref" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="numref" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="ctaref" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="moneda" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tascam" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="totdoc" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="totrec" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="ramo" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="poliza" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="certif" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="cencos" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="agente" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="preimp" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="flag01" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="flag02" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="flag03" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="flag04" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="sucrea" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="sucmod" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecrea" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecmod" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tipval" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="codcia" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tipcoa" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="coaseg" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="comisi" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="plaza" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="cruce" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="cencos2" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="ccos2" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="sucurtraslado" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="impmod" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="orden" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="oritraslado" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tiptraslado" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="numtraslado" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="ctatraslado" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="valdet1" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="valdet2" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="ubicacion" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="numalterno" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fechaimpresion" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fechapago" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:sequence>
+						<xsd:element name="cuentaCorrienteDetalle" type="tns:CuentaCorrienteDetalle" 
+						minOccurs="1" maxOccurs="unbounded" nillable="true">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:sequence>
+			</xsd:complexType>
+
+
+			<xsd:complexType name="CuentaCorrienteDetalle">
+				<xsd:sequence>
+					<xsd:element name="sucur" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="person" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="origen" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tipdoc" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="numdoc" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="nrocta" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tipval" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="totdoc" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="totrec" type="xsd:float" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="sucrea" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="sucmod" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecrea" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecmod" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="codcia" type="xsd:string" minOccurs="0">
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="crearCotizacion">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="comp" type="xsd:string"
+							minOccurs="0">
+						</xsd:element>
+						<xsd:element name="sucur" type="xsd:string"
+							minOccurs="0">
+						</xsd:element>
+						<xsd:element name="fecini" type="xsd:date"
+							minOccurs="0">
+						</xsd:element>
+						<xsd:element name="fecter" type="xsd:date"
+							minOccurs="0">
+						</xsd:element>
+						<xsd:element name="comision" type="xsd:float"
+							minOccurs="0">
+						</xsd:element>
+						<xsd:element name="vaseg" type="xsd:float"
+							minOccurs="0">
+						</xsd:element>
+						<xsd:element name="producto"
+							type="tns:Producto" minOccurs="0" maxOccurs="unbounded">
+						</xsd:element>
+						<xsd:element name="parametroCotizacion"
+							type="tns:ParametroCotizacion" minOccurs="0">
+						</xsd:element>
+						<xsd:element name="tercero" type="tns:Tercero"
+							minOccurs="0" maxOccurs="unbounded">
+						</xsd:element>
+						<xsd:element name="detalle" type="tns:Detalle"
+							minOccurs="0" maxOccurs="unbounded">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="crearCotizacionResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="contextoRespuesta" type="tns:ContextoRespuesta">
+						</xsd:element>
+						<xsd:element name="poliza" type="tns:Poliza" nillable="true" minOccurs="0" maxOccurs="unbounded"></xsd:element>						
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="validarCotizacion">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="certif"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="sucur"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="codpla" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="orden"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="validarCotizacionResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="contextoRespuesta"
+							type="tns:ContextoRespuesta">
+						</xsd:element>
+						<xsd:element name="poliza"
+							type="tns:Poliza" nillable="true">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="actualizarCotizacion">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="sucur"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="codpla"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="certif"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="orden"
+							type="xsd:int">
+						</xsd:element>
+						<xsd:element name="detalle"
+							type="tns:Detalle" minOccurs="0" maxOccurs="unbounded">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="actualizarCotizacionResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="contextoRespuesta"
+							type="tns:ContextoRespuesta">
+						</xsd:element>
+						<xsd:element name="poliza"
+							type="tns:Poliza" nillable="true">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="emitirPoliza">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="cotizacion"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="sucur"
+							type="xsd:string">
+						</xsd:element>
+
+						<xsd:element name="codpla" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="orden"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="emitirPolizaResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="contextoRespuesta"
+							type="tns:ContextoRespuesta">
+						</xsd:element>
+						<xsd:element name="poliza"
+							type="tns:Poliza" nillable="true">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+
+			<xsd:complexType name="Error">
+				<xsd:sequence>
+					<xsd:element name="codError" type="xsd:string"></xsd:element>
+					<xsd:element name="descError" type="xsd:string"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="ContextoRespuesta">
+				<xsd:sequence>
+					<xsd:element name="codigoTx" type="xsd:string">
+					</xsd:element>
+					<xsd:element name="fechaTx" type="xsd:dateTime"></xsd:element>
+					<xsd:element name="errores" type="tns:Error" minOccurs="0"
+						maxOccurs="unbounded"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+
+
+			<xsd:complexType name="ParametroCotizacion">
+				<xsd:sequence>
+					<xsd:element name="usuario" type="xsd:string" minOccurs="0"></xsd:element>
+					<xsd:element name="tipoObjeto" type="xsd:string" minOccurs="0">
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+
+			<xsd:complexType name="Reaseguro">
+				<xsd:sequence>
+					<xsd:element name="sucur" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="certif" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="codpla" type="xsd:string" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="tomador" type="xsd:int" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecini" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="fecter" type="xsd:date" minOccurs="0">
+					</xsd:element>
+					<xsd:element name="comision" type="xsd:float" minOccurs="0">
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+
+			<xsd:complexType name="ResultadoPoliza">
+				<xsd:sequence>
+					<xsd:element name="sucur" type="xsd:string"></xsd:element>
+					<xsd:element name="poliza" type="xsd:string"></xsd:element>
+					<xsd:element name="certif" type="xsd:string"></xsd:element>
+					<xsd:element name="estado" type="xsd:int"></xsd:element>
+					<xsd:element name="fecini" type="xsd:date"></xsd:element>
+					<xsd:element name="fecter" type="xsd:date"></xsd:element>
+					<xsd:element name="codpla" type="xsd:string"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="buscarPolizas">
+            	<xsd:complexType>
+            		<xsd:sequence>
+            			<xsd:element name="asegurado"
+            				type="xsd:string">
+            			</xsd:element>
+            			<xsd:element name="sucur"
+            				type="xsd:string">
+            			</xsd:element>
+            			<xsd:element name="poliza"
+            				type="xsd:string">
+            			</xsd:element>
+            			<xsd:element name="certif"
+            				type="xsd:string">
+            			</xsd:element>
+            			<xsd:element name="codpla"
+            				type="xsd:string">
+            			</xsd:element>
+            		</xsd:sequence>
+            	</xsd:complexType>
+            </xsd:element>
+            <xsd:element name="buscarPolizasResponse">
+            	<xsd:complexType>
+            		<xsd:sequence>
+
+            			<xsd:element name="contextoRespuesta" type="tns:ContextoRespuesta"></xsd:element>
+            			<xsd:element name="resultadoPoliza"
+            				type="tns:ResultadoPoliza" minOccurs="0" maxOccurs="unbounded" nillable="true">
+            			</xsd:element>
+            		</xsd:sequence>
+            	</xsd:complexType>
+            </xsd:element>
+            <xsd:element name="consultarPoliza">
+            	<xsd:complexType>
+            		<xsd:sequence>
+
+            			<xsd:element name="sucur" type="xsd:string"></xsd:element>
+
+            			<xsd:element name="codpla" type="xsd:string">
+            			</xsd:element>
+            			<xsd:element name="certif" type="xsd:string">
+            			</xsd:element>
+            			<xsd:element name="orden"
+            				type="xsd:int">
+            			</xsd:element>
+            		</xsd:sequence>
+            	</xsd:complexType>
+            </xsd:element>
+            <xsd:element name="consultarPolizaResponse">
+            	<xsd:complexType>
+            		<xsd:sequence>
+
+            			<xsd:element name="contextoRespuesta" type="tns:ContextoRespuesta"></xsd:element>
+            			<xsd:element name="poliza"
+            				type="tns:Poliza" nillable="true">
+            			</xsd:element>
+            		</xsd:sequence>
+            	</xsd:complexType>
+            </xsd:element>
+            <xsd:element name="anularCertificado">
+            	<xsd:complexType>
+            		<xsd:sequence>
+
+            			<xsd:element name="sucur" type="xsd:string"></xsd:element>
+            			<xsd:element name="poliza"
+            				type="xsd:string">
+            			</xsd:element>
+            			<xsd:element name="certif"
+            				type="xsd:string">
+            			</xsd:element>
+            			<xsd:element name="codpla"
+            				type="xsd:string">
+            			</xsd:element>
+            		</xsd:sequence>
+            	</xsd:complexType>
+            </xsd:element>
+            <xsd:element name="anularCertificadoResponse">
+            	<xsd:complexType>
+            		<xsd:sequence>
+
+            			<xsd:element name="contextoRespuesta"
+            				type="tns:ContextoRespuesta">
+            			</xsd:element>
+            			<xsd:element name="anulado"
+            				type="xsd:boolean">
+            			</xsd:element>
+            		</xsd:sequence>
+            	</xsd:complexType>
+            </xsd:element>
+            <xsd:element name="cancelarCertificado">
+            	<xsd:complexType>
+            		<xsd:sequence>
+
+            			<xsd:element name="sucur" type="xsd:string"></xsd:element>
+            			<xsd:element name="poliza" type="xsd:string">
+            			</xsd:element>
+            			<xsd:element name="certif" type="xsd:string">
+            			</xsd:element>
+            			<xsd:element name="codpla" type="xsd:string">
+            			</xsd:element>
+            			<xsd:element name="fechaCancelacion"
+            				type="xsd:date">
+            			</xsd:element>
+            			<xsd:element name="causa" type="xsd:string">
+            			</xsd:element>
+            		</xsd:sequence>
+            	</xsd:complexType>
+            </xsd:element>
+            <xsd:element name="cancelarCertificadoResponse">
+            	<xsd:complexType>
+            		<xsd:sequence>
+
+            			<xsd:element name="contextoRespuesta"
+            				type="tns:ContextoRespuesta">
+            			</xsd:element>
+            			<xsd:element name="cancelado"
+            				type="xsd:boolean">
+            			</xsd:element>
+            		</xsd:sequence>
+            	</xsd:complexType>
+            </xsd:element>
+		
+		
+            <xsd:complexType name="Producto">
+            	<xsd:sequence>
+            		<xsd:element name="codpla" type="xsd:string"></xsd:element>
+            		<xsd:element name="nemotec" type="xsd:string"></xsd:element>
+            	</xsd:sequence>
+            </xsd:complexType>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="crearCotizacionRequest">
+		<wsdl:part name="parameters" element="tns:crearCotizacion"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="crearCotizacionResponse">
+		<wsdl:part name="parameters" element="tns:crearCotizacionResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="validarCotizacionRequest">
+		<wsdl:part name="parameters" element="tns:validarCotizacion"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="validarCotizacionResponse">
+		<wsdl:part name="parameters" element="tns:validarCotizacionResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="actualizarCotizacionRequest">
+		<wsdl:part name="parameters" element="tns:actualizarCotizacion"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="actualizarCotizacionResponse">
+		<wsdl:part name="parameters" element="tns:actualizarCotizacionResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="emitirPolizaRequest">
+		<wsdl:part name="parameters" element="tns:emitirPoliza"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="emitirPolizaResponse">
+		<wsdl:part name="parameters" element="tns:emitirPolizaResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="buscarPolizasRequest">
+		<wsdl:part name="parameters" element="tns:buscarPolizas"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="buscarPolizasResponse">
+		<wsdl:part name="parameters" element="tns:buscarPolizasResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="consultarPolizaRequest">
+		<wsdl:part name="parameters" element="tns:consultarPoliza"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="consultarPolizaResponse">
+		<wsdl:part name="parameters" element="tns:consultarPolizaResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="anularCertificadoRequest">
+		<wsdl:part name="parameters" element="tns:anularCertificado"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="anularCertificadoResponse">
+		<wsdl:part name="parameters" element="tns:anularCertificadoResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="cancelarCertificadoRequest">
+		<wsdl:part name="parameters" element="tns:cancelarCertificado"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="cancelarCertificadoResponse">
+		<wsdl:part name="parameters" element="tns:cancelarCertificadoResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="SrvPoliza">
+		<wsdl:operation name="crearCotizacion">
+			<wsdl:input message="tns:crearCotizacionRequest"></wsdl:input>
+			<wsdl:output message="tns:crearCotizacionResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="validarCotizacion">
+			<wsdl:input message="tns:validarCotizacionRequest"></wsdl:input>
+			<wsdl:output message="tns:validarCotizacionResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="actualizarCotizacion">
+			<wsdl:input message="tns:actualizarCotizacionRequest"></wsdl:input>
+			<wsdl:output message="tns:actualizarCotizacionResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="emitirPoliza">
+			<wsdl:input message="tns:emitirPolizaRequest"></wsdl:input>
+			<wsdl:output message="tns:emitirPolizaResponse"></wsdl:output>
+		</wsdl:operation>		<wsdl:operation name="buscarPolizas">			<wsdl:input message="tns:buscarPolizasRequest"></wsdl:input>			<wsdl:output message="tns:buscarPolizasResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="consultarPoliza">
+			<wsdl:input message="tns:consultarPolizaRequest"></wsdl:input>
+			<wsdl:output message="tns:consultarPolizaResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="anularCertificado">
+			<wsdl:input message="tns:anularCertificadoRequest"></wsdl:input>
+			<wsdl:output message="tns:anularCertificadoResponse"></wsdl:output>
+		</wsdl:operation>		<wsdl:operation name="cancelarCertificado">			<wsdl:input message="tns:cancelarCertificadoRequest"></wsdl:input>			<wsdl:output message="tns:cancelarCertificadoResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="SrvPolizaSOAP" type="tns:SrvPoliza">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="crearCotizacion">
+			<soap:operation soapAction="http://www.example.org/SrvPoliza/crearCotizacion" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="validarCotizacion">
+			<soap:operation soapAction="http://www.example.org/SrvPoliza/validarCotizacion" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="actualizarCotizacion">
+			<soap:operation
+				soapAction="http://www.example.org/SrvPoliza/actualizarCotizacion" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="emitirPoliza">
+			<soap:operation soapAction="http://www.example.org/SrvPoliza/emitirPoliza" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="buscarPolizas">
+			<soap:operation soapAction="http://www.example.org/SrvPoliza/buscarPolizas" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="consultarPoliza">
+			<soap:operation soapAction="http://www.example.org/SrvPoliza/consultarPoliza" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>			
+		<wsdl:operation name="anularCertificado">
+			<soap:operation soapAction="http://www.example.org/SrvPoliza/anularCertificado" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="cancelarCertificado">
+			<soap:operation soapAction="http://www.example.org/SrvPoliza/cancelarCertificado" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>	
+	</wsdl:binding>
+	<wsdl:service name="SrvPoliza">
+		<wsdl:port binding="tns:SrvPolizaSOAP" name="SrvPolizaSOAP">
+			<soap:address location="http://www.example.org/" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
