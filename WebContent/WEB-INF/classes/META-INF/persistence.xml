@@ -46,10 +46,10 @@
 
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver" />
+			<!-- <property name="javax.persistence.jdbc.url" -->
+			<!-- value="jdbc:oracle:thin:@192.168.200.12:1521:osiris" /> -->
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:oracle:thin:@192.168.200.12:1521:osiris" />
-			<!--<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@192.168.200.35:1521:osiris" 
-				/> -->
+				value="jdbc:oracle:thin:@192.168.200.35:1521:osiris" />
 			<property name="javax.persistence.jdbc.user" value="webservices" />
 			<property name="javax.persistence.jdbc.password" value="webservi14" />
 			<property name="eclipselink.logging.level" value="info" />
