@@ -468,26 +468,4 @@ public class ConsultaExperiencia implements ServicioExterno<String> {
 		return cod;
 	}
 
-	public static void main(String[] args) {
-		try {
-			Class c = Class.forName("coop.equidad.servicio.externo.autos.ConsultaExperiencia");
-			ServicioExterno se = (ServicioExterno) c.newInstance();
-			Map<String, Object> parametros = new HashMap<String, Object>();
-			try {
-				se.getValor(parametros);
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
 }
